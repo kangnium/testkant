@@ -1,0 +1,22 @@
+
+
+j'ai observé le problème
+
+- ouvrir le fichier csv dans python
+  -pb: dans une colonne, il y a des virgules. or la virgules est utilisé comme délimiteurs
+  -solution: supprimer les colonne vides et la colone lastdata, puis exporter le tableau
+
+lancer logstash pour traiter le csv.
+problème de date : il faut convertir la date et donner le target à kangnitime
+j'ai supprimé 3 colonnes
+
+Mercredi
+il y avait des erreurs au niveau de logstash
+il fallait regarrder dans les log de logstash forwarder
+
+il y a pb de handshaking
+
+résolu en utilisant 
+la methode FQDN
+puis démarrrer les service dans l'ordre
+logstash avant logstash forwarder
